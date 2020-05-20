@@ -1,13 +1,13 @@
-﻿using Server.Service;
+﻿using Client.Service;
 
-namespace Server
+namespace Client
 {
     class Program
     {
         static void Main(string[] args)
         {
             CommunicationService cs = new CommunicationService();
-            cs.StartListener();
+            cs.StartConnection();
         }
     }
 }
